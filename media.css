@@ -52,30 +52,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 @media (min-width: 1200px) {
-    .slider__inside, .top-line__inside {
+    .slider__inside, .top-line__inside, .footer-menu__inside {
         width: 1170px;
     }
 }
 
-@media (min-width: 1200px){
- .footer-menu__inside {
-     width: 1700px;
- }
-
-}

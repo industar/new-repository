@@ -502,8 +502,6 @@ h4 {
 
 .news-wrap {
     margin: 7px 0 0 190px;  /*отодвигаем текст для картинки*/
-
-
 }
 
 
@@ -523,104 +521,154 @@ h4 {
 }
 
 
-.bottom-line .col-xs-3 {
-    width: 25%;
-    float: left;
-    min-height: 1px;
-    box-sizing: border-box;
-    position: relative;
-    text-align: left;
-    border-right: 1px solid #e2e2e2;
+
+
+/*Начало спонсоры*/
+.sponsors {
+    background-color: #f7f7f9;
+
 }
 
-.bottom-line .col-xs-3 h3 {
+.col-xs-15 {
+    width: 20%;
+    height: 132px;
+    float: left;
+    min-height: 1px;
+    position: relative;
+    text-align: center;
+    background-color: #fafafa;
+    box-sizing: border-box;
+    margin: 75px 0;
+}
+
+
+
+.col-xs-15:last-child {
+    margin-right: 0;
+}
+
+.col-xs-15 img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*Конец спонсоры*/
+
+
+/*Начало голубая полоса*/
+
+.bottom-line {
+    border: 1px solid #fff;
+    background-color: #3bbdfb;
+    background-image: -moz-linear-gradient(left, #3bbdfb 0%, #26b7fc 50%, #3bbdfb 100%);
+    background-image: -o-linear-gradient(left, #3bbdfb 0%, #26b7fc 50%, #3bbdfb 100%);
+    background-image: -webkit-linear-gradient(left, #3bbdfb 0%, #26b7fc 50%, #3bbdfb 100%);
+    background-image: linear-gradient(left, #3bbdfb 0%, #26b7fc 50%, #3bbdfb 100%);
+}
+.bottom-line__flex {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    margin: 10px 0;
+}
+
+.bottom-line h3 {
     color: #ffffff;
     font-family: "PT Sans", sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 24px;
-
 }
 
-.bottom-line .col-xs-3 p {
+.bottom-line p {
     color: #ffffff;
     font-family: "Museo Sans Cyrl 300", sans-serif;
     font-size: 14px;
     line-height: 24px;
 }
 
-.bottom-line {
-    background-color: #3bbdfb;
-    background-image: linear-gradient(to right, #3bbdfb 0%, #27b7fc 50%, #3bbdfb 100%);
-    border: 1px solid white;
+.bottom-line__social li img {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
-.bottom-line__share {
-    padding: 11px 0;
+.bottom-line__social li {
+    display: inline-block;
+    padding-right: 41px;
+    position: relative;
 }
 
-.bottom-line__social {
-    padding: 20px 54px;
-}
 
-.bottom-line__search {
-    padding: 11px 54px;
-}
-
-.bottom-line__input {
-    padding: 11px;
+.input-group {
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
 }
 
 .input-group input {
-    margin: 16px -42px 16px 41px;
-
     background: #3bbdfb linear-gradient(to right, #3bbdfb 0%, #27b7fc 50%, #3bbdfb 100%);
     border: 2px solid #ffffff;
     border-radius: 8px;
+    height: 44px;
+    padding-left: 10px;
+    font-size: 16px;
 }
+.input-group input::-webkit-input-placeholder {color:#fff;}
+.input-group input::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+.input-group input:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+.input-group input:-ms-input-placeholder      {color:#fff;}
 
-.input-group-btn > .btn-default {
-    background-color: #EDEDED;
-}
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
 
-.btn {
-    display: inline-block;
-    padding: 18px 18px;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-}
 
-:before, :after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.input-group input[type="search"]::-webkit-input-placeholder {
+/* Вариант без кнопки, только с иконкой
+.input-group .icon {
     color: #ffffff;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 1;
+}
+*/
+/* Вариант с кнопкой*/
+.input-group .icon {
+    color: #3bbdfb;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    padding: 13px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+    background-color: #fff; /* layer fill content */
+
 }
 
 
+/*Конец голубой полосы*/
 
 
 .footer-columns{
-    border: 1px solid #fff; /* stroke */
-    background-color: #f7f7f9; /* layer fill content */
+    border: 1px solid #fff;
+    background-color: #f7f7f9;
 }
+
+
 .footer-columns .col-xs-3 {
 
     width: 25%;
@@ -728,7 +776,7 @@ h4 {
 }
 .footer-columns input.newsletter-button {
     margin-top: 18px;
-    margin-left: 52%;
+    margin-left: 46%;
     padding: 4px 16px;
     text-transform: uppercase;
     color: #ffffff;
@@ -754,12 +802,15 @@ h4 {
 .footer-menu li {
     display: inline-block;
     float: left;
-    color: #a6a6a6;
+
     text-transform: uppercase;
     font-family: "Museo Sans Cyrl 500", sans-serif;
     font-size: 12px;
     line-height: 14px;
     padding: 11px 7px 17px;
+}
+.footer-menu li a {
+    color: #a6a6a6;
 }
 
 .footer-menu p {
