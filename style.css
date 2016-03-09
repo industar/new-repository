@@ -174,7 +174,7 @@ text-align: center;
 
 .slider {	
 	background: url('img/bacgrheader.jpg') repeat-x center;
-	overflow: hidden;
+    overflow: hidden;
 	margin:0 auto;
     box-sizing: border-box;
     background-size: cover;
@@ -182,7 +182,13 @@ text-align: center;
 }
 .slider__inside {
         margin: 0 auto;
-    padding: 150px 15px 0 15px;
+        padding: 150px 15px 0 15px;
+        position: relative;
+}
+.slider__inside img {
+    position: absolute;
+    top: 65%;
+    left: 65%;
 }
 
 
